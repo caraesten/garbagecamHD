@@ -529,12 +529,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 25;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = F6Q9WB4KR2;
+				DEVELOPMENT_TEAM = F6Q9WB4KR2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -548,11 +546,10 @@
 					"$(PROJECT_DIR)/Pods",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.estenhurtle.garbageCam1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.caraesten.garbageHD;
 				PRODUCT_NAME = GarbageCam;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Garbage Cam Development";
 				SWIFT_OBJC_BRIDGING_HEADER = "GarbageCam/GarbageCam-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
