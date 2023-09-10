@@ -51,7 +51,7 @@
 		494264A629ABF29000536EF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC31C8A865BF1308D340D163 /* Pods-GarbageCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GarbageCam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GarbageCam/Pods-GarbageCam.debug.xcconfig"; sourceTree = "<group>"; };
 		D60DFA701E80A201007EA7D1 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		D60FEB831D69A99900E3D7F2 /* GarbageCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GarbageCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60FEB831D69A99900E3D7F2 /* GarbageHD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GarbageHD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60FEB861D69A99C00E3D7F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D60FEB881D69A99C00E3D7F2 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		D60FEB8B1D69A99C00E3D7F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		D60FEB841D69A99900E3D7F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D60FEB831D69A99900E3D7F2 /* GarbageCam.app */,
+				D60FEB831D69A99900E3D7F2 /* GarbageHD.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,9 +200,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D60FEB821D69A99900E3D7F2 /* GarbageCam */ = {
+		D60FEB821D69A99900E3D7F2 /* GarbageHD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D60FEB951D69A99C00E3D7F2 /* Build configuration list for PBXNativeTarget "GarbageCam" */;
+			buildConfigurationList = D60FEB951D69A99C00E3D7F2 /* Build configuration list for PBXNativeTarget "GarbageHD" */;
 			buildPhases = (
 				E15F7CA21C76748D92B120FB /* [CP] Check Pods Manifest.lock */,
 				D60FEB7F1D69A99900E3D7F2 /* Sources */,
@@ -216,7 +216,7 @@
 			);
 			dependencies = (
 			);
-			name = GarbageCam;
+			name = GarbageHD;
 			packageProductDependencies = (
 				494264A929ABF34E00536EF7 /* FirebaseAnalytics */,
 				494264AB29ABF34E00536EF7 /* FirebaseAnalyticsSwift */,
@@ -224,7 +224,7 @@
 				494264AF29ABF34E00536EF7 /* FirebaseCrashlytics */,
 			);
 			productName = GarbageCam;
-			productReference = D60FEB831D69A99900E3D7F2 /* GarbageCam.app */;
+			productReference = D60FEB831D69A99900E3D7F2 /* GarbageHD.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -243,7 +243,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D60FEB7E1D69A99900E3D7F2 /* Build configuration list for PBXProject "GarbageCam" */;
+			buildConfigurationList = D60FEB7E1D69A99900E3D7F2 /* Build configuration list for PBXProject "GarbageHD" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -260,7 +260,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D60FEB821D69A99900E3D7F2 /* GarbageCam */,
+				D60FEB821D69A99900E3D7F2 /* GarbageHD */,
 			);
 		};
 /* End PBXProject section */
@@ -493,30 +493,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 25;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = F6Q9WB4KR2;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6Q9WB4KR2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				INFOPLIST_FILE = GarbageCam/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GarbageHD;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"$(PROJECT_DIR)/Pods",
 				);
-				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.estenhurtle.garbageCam1;
-				PRODUCT_NAME = GarbageCam;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.caraesten.garbageHD;
+				PRODUCT_NAME = GarbageHD;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Garbage Cam Development";
 				SWIFT_OBJC_BRIDGING_HEADER = "GarbageCam/GarbageCam-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -531,7 +529,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F6Q9WB4KR2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -539,15 +537,16 @@
 					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				INFOPLIST_FILE = GarbageCam/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GarbageHD;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"$(PROJECT_DIR)/Pods",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.caraesten.garbageHD;
-				PRODUCT_NAME = GarbageCam;
+				PRODUCT_NAME = GarbageHD;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "GarbageCam/GarbageCam-Bridging-Header.h";
@@ -558,7 +557,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D60FEB7E1D69A99900E3D7F2 /* Build configuration list for PBXProject "GarbageCam" */ = {
+		D60FEB7E1D69A99900E3D7F2 /* Build configuration list for PBXProject "GarbageHD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D60FEB931D69A99C00E3D7F2 /* Debug */,
@@ -567,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D60FEB951D69A99C00E3D7F2 /* Build configuration list for PBXNativeTarget "GarbageCam" */ = {
+		D60FEB951D69A99C00E3D7F2 /* Build configuration list for PBXNativeTarget "GarbageHD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D60FEB961D69A99C00E3D7F2 /* Debug */,
